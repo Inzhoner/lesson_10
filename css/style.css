@@ -1,0 +1,32 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+body {
+    font-family: 'Proxima Nova';
+    padding: 20px;
+}
+
+.categories__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 24px;
+    max-width: 1290px;
+    margin-inline: auto;
+}
+
+.categories__card {
+    width: 250px;
+}
+.categories__link-card {
+}
+.categories__content-card {
+}
+.categories__name-card {
+}
+.categories__count-card {
+}
+.categories__img-card {
+}
+.categories__img-icon {
+}

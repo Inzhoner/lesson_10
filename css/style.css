@@ -20,7 +20,7 @@ body {
     max-width: 1290px;
     padding: 15px;
     margin-inline: auto;
-    position: relative
+    position: relative;
 }
 
 .main-logo {
@@ -127,10 +127,6 @@ body {
 }
 
 /*- sub menu dropdown */
-.sub-menu {
-    /* position: absolute; */
-}
-
 .submenu-dropdown__list {
     display: none;
     position: absolute;
@@ -149,12 +145,19 @@ body {
     display: block;
 }
 
+.submenu-dropdown__list {
+    padding: 20px 20px 10px 35px;
+}
+
 .submenu-dropdown__link {
     width: 300px;
     font-size: 19px;
     font-weight: 400;
     line-height: 2.1;
-    padding: 20px 20px 10px 35px;
+}
+
+.submenu-dropdown__link:hover {
+    text-decoration: underline;
 }
 
 /*+ Main */

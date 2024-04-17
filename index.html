@@ -53,14 +53,121 @@
         </div>
         <!-- //Main Header -->
         <div class="main-header">
+            <!-- Main-header__logo -->
             <div class="main-header__logo main-logo">
-                <img class="main-logo__icon" src="img/header/logo__main-header.png" alt="main header logo">
+                <a class="main-logo__link" href="#!">
+                    <img class="main-logo__icon" src="img/header/logo__main-header.png" alt="main header logo">
+                </a>
             </div>
+            <!-- Main header button -->
             <div class="main-header__button catalog-button">
-                <button class="button catalog-button__btn">
-                    <img src="img/header/menu-catalog.svg" alt="Іконка каталогу"> Каталог
+                <button class="catalog-button__btn">
+                    <span class="catalog-button__icon"></span>
+                    Каталог
                 </button>
+                <!-- dropdown menu -->
+                <div class="catalog-button__dropdown menu-dropdown">
+                    <ul class="menu-dropdown__list">
+                        <li class="menu-dropdown__item">
+                            <a class="menu-dropdown__link" href="#!">
+                                <img class="" src="img/header/main-header-dropdown/lizhka.svg" alt="Ліжка іконка">
+                                <span>Ліжка</span>
+                            </a>
+                            <!-- sub menu dropdown-->
+                            <ul class="submenu-dropdown__list">
+                                <li class="submenu-dropdown__item">
+                                    <a class="submenu-dropdown__link" href="#!">Lorem, ipsum dolor.</a>
+                                </li>
+                                <li class="submenu-dropdown__item">
+                                    <a class="submenu-dropdown__link" href="#!">Lorem, ipsum dolor.</a>
+                                </li>
+                                <li class="submenu-dropdown__item">
+                                    <a class="submenu-dropdown__link" href="#!">Lorem, ipsum dolor.</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-dropdown__item">
+                            <a class="menu-dropdown__link" href="#!">
+                                <img class="" src="img/header/main-header-dropdown/matrac.svg" alt="Матраци іконка">
+                                <span>Матраци</span>
+                            </a>
+                            <!-- sub menu dropdown-->
+                            <ul class="submenu-dropdown__list">
+                                <li class="submenu-dropdown__item">
+                                    <a class="submenu-dropdown__link" href="#!">Lorem, ipsum dolor.</a>
+                                </li>
+                                <li class="submenu-dropdown__item">
+                                    <a class="submenu-dropdown__link" href="#!">Lorem, ipsum dolor.</a>
+                                </li>
+                                <li class="submenu-dropdown__item">
+                                    <a class="submenu-dropdown__link" href="#!">Lorem, ipsum dolor.</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-dropdown__item">
+                            <a class="menu-dropdown__link" href="#!">
+                                <img class="" src="img/header/main-header-dropdown/mm.svg" alt="М’які меблі іконка">
+                                <span>М'які меблі</span>
+                            </a>
+                            <!-- sub menu dropdown-->
+                            <ul class="submenu-dropdown__list">
+                                <li class="submenu-dropdown__item">
+                                    <a class="submenu-dropdown__link" href="#!">Lorem, ipsum dolor.</a>
+                                </li>
+                                <li class="submenu-dropdown__item">
+                                    <a class="submenu-dropdown__link" href="#!">Lorem, ipsum dolor.</a>
+                                </li>
+                                <li class="submenu-dropdown__item">
+                                    <a class="submenu-dropdown__link" href="#!">Lorem, ipsum dolor.</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-dropdown__item">
+                            <a class="menu-dropdown__link" href="#!">
+                                <img class="" src="img/header/main-header-dropdown/shafa.svg" alt="Шафи іконка">
+                                <span>Шафи</span>
+                            </a>
+                        </li>
+                        <li class="menu-dropdown__item">
+                            <a class="menu-dropdown__link" href="#!">
+                                <img class="" src="img/header/main-header-dropdown/komod.svg" alt="Комоди іконка">
+                                <span>Комоди</span>
+                            </a>
+                        </li>
+                        <li class="menu-dropdown__item">
+                            <a class="menu-dropdown__link" href="#!">
+                                <img class="" src="img/header/main-header-dropdown/tumba.svg" alt="Тумби іконка">
+                                <span>Тумби</span>
+                            </a>
+                        </li>
+                        <li class="menu-dropdown__item">
+                            <a class="menu-dropdown__link" href="#!">
+                                <img class="" src="img/header/main-header-dropdown/stol.svg" alt="Столи іконка">
+                                <span>Столи</span>
+                            </a>
+                        </li>
+                        <li class="menu-dropdown__item">
+                            <a class="menu-dropdown__link" href="#!">
+                                <img class="" src="img/header/main-header-dropdown/stilci.svg" alt="Стільці іконка">
+                                <span>Стільці</span>
+                            </a>
+                        </li>
+                        <li class="menu-dropdown__item">
+                            <a class="menu-dropdown__link" href="#!">
+                                <img class="" src="img/header/main-header-dropdown/mstiny.svg" alt="Меблеві стіни іконка">
+                                <span>Меблеві стіни</span>
+                            </a>
+                        </li>
+                        <li class="menu-dropdown__item">
+                            <a class="menu-dropdown__link" href="#!">
+                                <img class="" src="img/header/main-header-dropdown/kuhni.svg" alt="Кухні іконка">
+                                <span>Кухні</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <!-- Main header search -->
             <div class="main-header__search search-box">
                 <input type="text" class="search-box__input" placeholder="Пошук товару">
                 <button class="search-box__button">
@@ -121,7 +228,7 @@
         <!--+ Popular categories -->
         <div class="categories">
             <div class="categories__wrapper">
-                <h2 class="categories__title">Популярні категорії</h2> 
+                <h2 class="categories__title">Популярні категорії</h2>
                 <div class="categories__cards">
                     <!--// Card-1 -->
                     <div class="categories__card">
@@ -136,7 +243,7 @@
                     </div>
                     <!--// Card-2 -->
                     <div class="categories__card">
-                        <a class="categories__link-card" href="#">
+                        <a class="categories__link-card" href="position.html">
                             <div class="categories__content-card">
                                 <h3 class="categories__name-card">Матраци</h3>
                                 <span class="categories__count-card">30</span>
@@ -147,7 +254,7 @@
                     </div>
                     <!--// Card-3 -->
                     <div class="categories__card">
-                        <a class="categories__link-card" href="#">
+                        <a class="categories__link-card" href="position.html">
                             <div class="categories__content-card">
                                 <h3 class="categories__name-card">М'які меблі</h3>
                                 <span class="categories__count-card">196</span>
@@ -158,7 +265,7 @@
                     </div>
                     <!--// Card-4 -->
                     <div class="categories__card">
-                        <a class="categories__link-card" href="#">
+                        <a class="categories__link-card" href="position.html">
                             <div class="categories__content-card">
                                 <h3 class="categories__name-card">Шафи</h3>
                                 <span class="categories__count-card">79</span>
@@ -169,7 +276,7 @@
                     </div>
                     <!--// Card-5 -->
                     <div class="categories__card">
-                        <a class="categories__link-card" href="#">
+                        <a class="categories__link-card" href="position.html">
                             <div class="categories__content-card">
                                 <h3 class="categories__name-card">Комоди</h3>
                                 <span class="categories__count-card">54</span>
@@ -180,7 +287,7 @@
                     </div>
                     <!--// Card-6 -->
                     <div class="categories__card">
-                        <a class="categories__link-card" href="#">
+                        <a class="categories__link-card" href="position.html">
                             <div class="categories__content-card">
                                 <h3 class="categories__name-card">Тумби</h3>
                                 <span class="categories__count-card">64</span>
@@ -191,7 +298,7 @@
                     </div>
                     <!--// Card-7 -->
                     <div class="categories__card">
-                        <a class="categories__link-card" href="#">
+                        <a class="categories__link-card" href="position.html">
                             <div class="categories__content-card">
                                 <h3 class="categories__name-card">Столи</h3>
                                 <span class="categories__count-card">35</span>
@@ -202,7 +309,7 @@
                     </div>
                     <!--// Card-8 -->
                     <div class="categories__card">
-                        <a class="categories__link-card" href="#">
+                        <a class="categories__link-card" href="position.html">
                             <div class="categories__content-card">
                                 <h3 class="categories__name-card">Стільці</h3>
                                 <span class="categories__count-card">89</span>
@@ -213,7 +320,7 @@
                     </div>
                     <!--// Card-9 -->
                     <div class="categories__card">
-                        <a class="categories__link-card" href="#">
+                        <a class="categories__link-card" href="position.html">
                             <div class="categories__content-card">
                                 <h3 class="categories__name-card">Меблеві стіни</h3>
                                 <span class="categories__count-card">24</span>
@@ -224,7 +331,7 @@
                     </div>
                     <!--// Card-10 -->
                     <div class="categories__card">
-                        <a class="categories__link-card" href="#">
+                        <a class="categories__link-card" href="position.html">
                             <div class="categories__content-card">
                                 <h3 class="categories__name-card">Кухні</h3>
                                 <span class="categories__count-card">30</span>
@@ -432,6 +539,7 @@
             </div>
         </div>
     </main>
+
 </body>
 
 </html>

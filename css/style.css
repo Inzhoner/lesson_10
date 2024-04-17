@@ -20,7 +20,7 @@ body {
     max-width: 1290px;
     padding: 15px;
     margin-inline: auto;
-    position: relative;
+    position: relative
 }
 
 .main-logo {
@@ -98,7 +98,8 @@ body {
     display: block;
 }
 
-.menu-dropdown__item {
+.menu-dropdown__item,
+.submenu-dropdown__item {
     background-color: #fff;
 }
 
@@ -106,18 +107,6 @@ body {
     background-image: url(../img/header/main-header-dropdown/arrow-black.svg);
     background-color: #ffbc57;
 }
-/*! перший варіант - невдало - розрив при ховері */
-/* .menu-dropdown__list::after {
-    content: '';
-    position: absolute;
-    top: 8px;
-    bottom: 8px;
-    right: 0;
-    width: 5px;
-    height: calc(100% - 16px);
-    background-color: #ffbc57;
-    transform: translateX(50%);
-} */
 
 .menu-dropdown__link {
     width: 300px;
@@ -149,25 +138,13 @@ body {
     left: 100%;
     z-index: 1000;
     background-color: #fff;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     padding-block: 8px;
     border-radius: 0 8px 8px 0;
-    /* min-height: 600px; */
-    /* transform: translateX(5px); */
+    min-height: 616px;
 }
 
-.submenu-dropdown__item {
-    background-color: #fff;
-}
-
-.menu-dropdown__list:hover .submenu-dropdown__list {
-    display: block;
-}
-
-.submenu-dropdown__list:hover {
-    display: block;
-}
-
+.menu-dropdown__item:hover .submenu-dropdown__list,
+.submenu-dropdown__list:hover,
 .submenu-dropdown__list:focus-within {
     display: block;
 }

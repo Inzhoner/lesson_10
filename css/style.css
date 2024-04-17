@@ -27,13 +27,12 @@ body {
     margin-right: 34px;
 }
 
-/* main header button */
+/*- main header button */
 .main-header__button {
     margin-right: 34px;
 }
 
 .catalog-button {
-    /* position: relative; */
 }
 
 .catalog-button__btn {
@@ -140,8 +139,17 @@ body {
 }
 
 /*- sub menu dropdown */
+.sub-menu {
+    /* position: absolute; */
+}
+
 .submenu-dropdown__list {
+    position: absolute;
     display: none;
+}
+
+.submenu-dropdown__item {
+    background-color: #fff;
 }
 
 .menu-dropdown__item:hover .submenu-dropdown__list {
@@ -159,7 +167,7 @@ body {
 .submenu-dropdown__list {
     display: none;
     position: absolute;
-    top: -8px;
+    top: 0;
     left: 100%;
     z-index: 1000;
     background-color: #fff;

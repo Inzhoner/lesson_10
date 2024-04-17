@@ -128,13 +128,17 @@ body {
 }
 
 .menu-dropdown__link {
-    width: 300px;
+    width: 305px;
     font-size: 20px;
     font-weight: 600;
     line-height: 1.4;
-    padding: 10px 15px 10px 30px;
-    background: url(../img/header/main-header-dropdown/arrow.svg) right 15px
+    padding: 10px 35px 10px 30px;
+    background: url(../img/header/main-header-dropdown/arrow.svg) right 10px
         center / auto no-repeat;
+}
+
+.menu-dropdown__link span {
+    display: inline-block;
 }
 
 .menu-dropdown__link img {
@@ -155,8 +159,8 @@ body {
     background-color: #fff;
     padding-block: 8px;
     border-radius: 0 8px 8px 0;
-    max-height: 616px;
     overflow-y: auto;
+    bottom: 0;
 }
 
 .menu-dropdown__item:hover .submenu-dropdown__list,

@@ -118,7 +118,6 @@ body {
     /* background-color: #fff; */
 }
 
-
 .submenu-dropdown__item {
     background-color: #fff;
 }
@@ -156,7 +155,8 @@ body {
     background-color: #fff;
     padding-block: 8px;
     border-radius: 0 8px 8px 0;
-    min-height: 616px;
+    max-height: 616px;
+    overflow-y: auto;
 }
 
 .menu-dropdown__item:hover .submenu-dropdown__list,

@@ -95,8 +95,8 @@ body {
     right: 0;
     width: 5px;
     background-color: #ffbc57;
-    z-index: 1;
-    pointer-events: none;
+    z-index: -1;
+    /* pointer-events: none; */
 }
 
 .menu-dropdown__item:hover::after {
@@ -114,7 +114,11 @@ body {
     display: block;
 }
 
-.menu-dropdown__item,
+.menu-dropdown__item {
+    /* background-color: #fff; */
+}
+
+
 .submenu-dropdown__item {
     background-color: #fff;
 }

@@ -83,8 +83,23 @@ body {
     border-radius: 8px 0 0 8px;
 }
 
-.menu-dropdown__list {
+/* .menu-dropdown__list {
     border-right: #ffbc57 5px solid;
+} */
+
+.menu-dropdown__list::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    right: 0;
+    width: 5px;
+    background-color: #ffbc57;
+    z-index: 1;
+}
+
+.menu-dropdown__item:hover::after {
+    background-color: #ffbc57;
 }
 
 /* Показуємо моє меню, коли кнопка має фокус */
@@ -132,7 +147,7 @@ body {
     position: absolute;
     top: 0;
     left: 100%;
-    z-index: 1000;
+    z-index: 100;
     background-color: #fff;
     padding-block: 8px;
     border-radius: 0 8px 8px 0;

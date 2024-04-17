@@ -96,6 +96,7 @@ body {
     width: 5px;
     background-color: #ffbc57;
     z-index: 1;
+    pointer-events: none;
 }
 
 .menu-dropdown__item:hover::after {

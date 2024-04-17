@@ -70,8 +70,8 @@ body {
     background-image: url('../img/header/menu-catalog-active.svg');
 }
 
-/*- dropdown */
-.menu-dropdown {
+/*- dropdown menu */
+.catalog-button__dropdown {
     display: none;
     position: absolute;
     top: 100%;
@@ -84,7 +84,7 @@ body {
 }
 
 .menu-dropdown__list {
-    border-right:  #ffbc57 5px solid;
+    border-right: #ffbc57 5px solid;
 }
 
 /* Показуємо моє меню, коли кнопка має фокус */
@@ -100,7 +100,6 @@ body {
 
 .menu-dropdown__item {
     background-color: #fff;
-    position: relative;
 }
 
 .menu-dropdown__item:hover .menu-dropdown__link {
@@ -144,15 +143,24 @@ body {
 }
 
 .submenu-dropdown__list {
+    /* display: none; */
     position: absolute;
-    display: none;
+    top: 0;
+    left: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    padding-block: 8px;
+    border-radius: 0 8px 8px 0;
+    /* min-height: 600px; */
+    /* transform: translateX(5px); */
 }
 
 .submenu-dropdown__item {
     background-color: #fff;
 }
 
-.menu-dropdown__item:hover .submenu-dropdown__list {
+.menu-dropdown__list:hover .submenu-dropdown__list {
     display: block;
 }
 
@@ -162,19 +170,6 @@ body {
 
 .submenu-dropdown__list:focus-within {
     display: block;
-}
-
-.submenu-dropdown__list {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    z-index: 1000;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding-block: 8px;
-    border-radius: 0 8px 8px 0;
-    transform: translateX(5px);
 }
 
 .submenu-dropdown__link {
